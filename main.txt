@@ -40,11 +40,17 @@ def update_universe():
 
 def normal_universe_update():
    gap_between_rich_and_poor = get_wealth(RICH) - get_wealth(POOR)
-   if gap_between_rich_and_poor > 1000000
+   if virus_pandemic = true
+      add_wealth(RICH, -100)
+      add_wealth(POOR, -100)
+      add_wealth(PHARMA_COMPANIES, 200)
       create_recession()
    else
-      add_wealth(RICH, 100)
-      add_wealth(POOR, -100)
+      if gap_between_rich_and_poor > 1000000
+         create_recession()
+      else
+         add_wealth(RICH, 100)
+         add_wealth(POOR, -100)
 
 def add_wealth(is_rich, amount_of_wealth):
    if not is_rich:
