@@ -12,11 +12,6 @@
 # everyone in the universe's risk.
 #####################################
 
-def main():
-   create_universe()
-   run_universe()
-   end_universe()
-
 def create_universe():
    say "Let there be light!"
    say "I see that the light is good"
@@ -66,5 +61,26 @@ def create_recession():
    get_philosophy_by_name("Liberalism").be_powerless()
    get_phisosophy_by_name("Capitalism").say "It's a fact of life"
 
+def solve_world_hunger(person, is_rich):
+    if person.age < 18:
+        if not is_rich:
+            person.kill()
+            person.cook()
+            meal = person
+                
+            return "A Modest Proposal"
+
+    else:       
+        if person.is_hungry:
+            person.eat(meal)
+
+        return "rich eat the poor"
+
 def end_universe():
    cake()
+
+def main():
+   create_universe()
+   run_universe()
+   end_universe()
+
